@@ -1,5 +1,7 @@
 package com.discordbots.starlightbot.classes;
 
+import com.discordbots.starlightbot.classes.commands.GoogleCommand;
+import com.discordbots.starlightbot.classes.commands.HelpCommand;
 import com.discordbots.starlightbot.classes.commands.PingCommand;
 import com.discordbots.starlightbot.classes.utils.CommandParser;
 import com.discordbots.starlightbot.interfaces.Command;
@@ -27,7 +29,7 @@ import java.util.Objects;
 public class MessageListener extends ListenerAdapter {
     private static JDA jda;
     private static HashMap<String, Command> commands = new HashMap<>();
-    private static HashMap<String, File> channelStreams = new HashMap<>();
+    private static HashMap<String, File> channelFiles = new HashMap<>();
     private static final CommandParser parser = new CommandParser();
 
     public static void main(String[] args)
@@ -37,23 +39,26 @@ public class MessageListener extends ListenerAdapter {
         jda.setAutoReconnect(true);
 
         for (TextChannel channel : jda.getTextChannels()) {
-            channelStreams.put(channel.getName(), new File("A:\\CHAT LOGS\\" + channel.getName() + ".txt"));
+            channelFiles.put(channel.getName(), new File("A:\\CHAT LOGS\\" + channel.getName() + ".txt"));
         }
 
         commands.put("ping", new PingCommand());
+        commands.put("google", new GoogleCommand());
+        commands.put("help", new HelpCommand());
+        HelpCommand.serverName = "Isabelle";
+        HelpCommand.supremeExecutiveOverlord = jda.getUserById("158745818688389121").getAsMention();
     }
 
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
+        try {
+            Parser.log(event);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         if (event.getMessage().getContent().startsWith("-") && !Objects.equals(event.getMessage().getAuthor().getId(), event.getJDA().getSelfUser().getId()))
             Parser.parse(parser.parse(event.getMessage().getContent(), event));
-        else {
-            try {
-                Parser.log(event);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
 
         if (!event.isFromType(ChannelType.PRIVATE)) {
             System.out.printf("[%s][%s] %s: %s\n", event.getGuild().getName(),
@@ -82,12 +87,12 @@ public class MessageListener extends ListenerAdapter {
             FileOutputStream fout;
             File file;
 
-            if (channelStreams.containsKey(event.getChannel().getName())) {
-                fout = new FileOutputStream(channelStreams.get(event.getChannel().getName()), true);
+            if (channelFiles.containsKey(event.getChannel().getName())) {
+                fout = new FileOutputStream(channelFiles.get(event.getChannel().getName()), true);
             } else {
                 file = new File("A:\\CHAT LOGS\\" + event.getChannel().getName() + ".txt");
                 fout = new FileOutputStream(file, true);
-                channelStreams.put(event.getChannel().getName(), file);
+                channelFiles.put(event.getChannel().getName(), file);
             }
 
             fout.write(messageLog.getBytes());

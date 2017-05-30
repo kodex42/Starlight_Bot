@@ -1,6 +1,5 @@
 package com.discordbots.starlightbot.classes.utils;
 
-import com.discordbots.starlightbot.interfaces.Command;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
 import java.util.ArrayList;

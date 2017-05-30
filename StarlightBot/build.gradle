@@ -13,4 +13,5 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile 'net.dv8tion:JDA:3.1.0_204'
+    compile group: 'org.jsoup', name: 'jsoup', version: '1.7.2'
 }
