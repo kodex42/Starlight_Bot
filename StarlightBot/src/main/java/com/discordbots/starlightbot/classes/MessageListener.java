@@ -16,7 +16,6 @@ import net.dv8tion.jda.core.hooks.ListenerAdapter;
 
 import javax.security.auth.login.LoginException;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Date;
@@ -45,7 +44,7 @@ public class MessageListener extends ListenerAdapter {
         commands.put("ping", new PingCommand());
         commands.put("google", new GoogleCommand());
         commands.put("help", new HelpCommand());
-        HelpCommand.serverName = "Isabelle";
+        HelpCommand.serverName = "Starlight";
         HelpCommand.supremeExecutiveOverlord = jda.getUserById("158745818688389121").getAsMention();
     }
 
@@ -57,13 +56,15 @@ public class MessageListener extends ListenerAdapter {
             e.printStackTrace();
         }
 
-        if (event.getMessage().getContent().startsWith("-") && !Objects.equals(event.getMessage().getAuthor().getId(), event.getJDA().getSelfUser().getId()))
-            Parser.parse(parser.parse(event.getMessage().getContent(), event));
+        event.getMessage().getContentDisplay();
+
+        if (event.getMessage().getContentDisplay().startsWith("-") && !Objects.equals(event.getMessage().getAuthor().getId(), event.getJDA().getSelfUser().getId()))
+            Parser.parse(parser.parse(event.getMessage().getContentDisplay(), event));
 
         if (!event.isFromType(ChannelType.PRIVATE)) {
             System.out.printf("[%s][%s] %s: %s\n", event.getGuild().getName(),
                     event.getTextChannel().getName(), event.getMember().getEffectiveName(),
-                    event.getMessage().getContent());
+                    event.getMessage().getContentDisplay());
         }
     }
 
@@ -83,7 +84,7 @@ public class MessageListener extends ListenerAdapter {
         }
 
         private static void log(MessageReceivedEvent event) throws IOException {
-            String messageLog = "[" + new Date().toString() + "]:[" + event.getChannel().getName() + "]:[" + event.getAuthor().getName() + "]:" + event.getMessage().getContent() + "\n";
+            String messageLog = "[" + new Date().toString() + "]:[" + event.getChannel().getName() + "]:[" + event.getAuthor().getName() + "]:" + event.getMessage().getContentDisplay() + "\n";
             FileOutputStream fout;
             File file;
 
