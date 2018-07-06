@@ -5,7 +5,6 @@ import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
 import net.dv8tion.jda.core.events.Event;
 import net.dv8tion.jda.core.events.ReadyEvent;
-import net.dv8tion.jda.core.exceptions.RateLimitedException;
 import net.dv8tion.jda.core.hooks.EventListener;
 
 import javax.security.auth.login.LoginException;
@@ -14,10 +13,10 @@ import javax.security.auth.login.LoginException;
  * Created by Azuris on 2017-05-23.
  */
 public class ReadyListener implements EventListener {
-    public static void main(String[] args) throws LoginException, RateLimitedException, InterruptedException  {
+    public static void main(String[] args) throws LoginException, InterruptedException  {
         // Note: It is important to register your com.discordbots.starlightbot.classes.ReadyListener before building
         JDA jda = new JDABuilder(AccountType.BOT)
-                .setToken(App.TOKEN)
+                .setToken(App.TOKEN[MessageListener.currentVer])
                 .addEventListener(new ReadyListener())
                 .buildBlocking();
         jda.setAutoReconnect(true);

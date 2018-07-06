@@ -1,0 +1,12 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="MisspelledHeader" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="CUSTOM_HEADERS">
+        <header value="&#9;&#9;&#9;&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;" />
+        <header value="&#9;&lt;plugins&gt;" />
+        <header value="&lt;build&gt;" />
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

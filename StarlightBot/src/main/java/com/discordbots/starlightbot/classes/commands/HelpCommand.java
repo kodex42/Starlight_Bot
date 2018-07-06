@@ -30,7 +30,7 @@ public class HelpCommand implements Command{
                 "\n" +
                 "\nCommands:" +
                 "\n" + PingCommand.HELP +
-                "\n" + GoogleCommand.HELP +
+                "\n" + SearchCommand.HELP +
                 "```";
         helpString = helpString.replaceAll("&", serverName);
 
