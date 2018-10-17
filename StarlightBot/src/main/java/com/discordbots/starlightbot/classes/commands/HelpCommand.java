@@ -8,7 +8,7 @@ import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
  */
 public class HelpCommand implements Command{
     public static String serverName = "";
-    public static String supremeExecutiveOverlord = "";
+    public static String seo = "";
 
     @Override
     public boolean called(String[] args, MessageReceivedEvent event) { return true; }
@@ -23,7 +23,7 @@ public class HelpCommand implements Command{
 
     @Override
     public String help() {
-        String helpString = "**&(StarlightBot) is an experimental Discord Bot written by " + supremeExecutiveOverlord + " in JAVA.**" +
+        String helpString = "**&(StarlightBot) is an experimental Discord Bot written by " + seo + " in JAVA.**" +
                 "\n" +
                 "\n```The current features are as follows:" +
                 "\n\tChat Logging: & logs chat data from all text channels it has access to." +

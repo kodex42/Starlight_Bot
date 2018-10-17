@@ -12,6 +12,7 @@ import net.dv8tion.jda.core.JDABuilder;
 import net.dv8tion.jda.core.entities.ChannelType;
 import net.dv8tion.jda.core.entities.Message;
 import net.dv8tion.jda.core.entities.MessageChannel;
+import net.dv8tion.jda.core.entities.TextChannel;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
 
@@ -44,7 +45,15 @@ public class MessageListener extends ListenerAdapter {
         commands.put("help", new HelpCommand());
         commands.put("init", new InitializeCommand());
         HelpCommand.serverName = "Starlight";
-        HelpCommand.supremeExecutiveOverlord = jda.getUserById("158745818688389121").getAsMention();
+        HelpCommand.seo = jda.getUserById("158745818688389121").getAsMention();
+
+        init();
+    }
+
+    private static void init() { // Find and set the text channel to log to
+        logChannel = jda.getTextChannelById(App.LOGGING_CHANNEL_ID);
+        logChannel.sendMessage("Hooked for logging!").queue();
+        initialized = true;
     }
 
     private void parseNonCommand(MessageReceivedEvent event) {
