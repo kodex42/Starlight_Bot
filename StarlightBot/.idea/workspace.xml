@@ -7,17 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="657e2ea7-0b09-48dd-9d49-8b22937e522b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/interfaces/AdminOnly.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/discordbots/starlightbot/classes/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/discordbots/starlightbot/classes/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/discordbots/starlightbot/classes/MessageListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/discordbots/starlightbot/classes/MessageListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/discordbots/starlightbot/classes/ReadyListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/discordbots/starlightbot/classes/ReadyListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/discordbots/starlightbot/classes/commands/InitializeCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/classes/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/classes/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/classes/MessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/classes/MessageListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/classes/commands/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/classes/commands/HelpCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/classes/commands/InitializeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/classes/commands/InitializeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/interfaces/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/interfaces/Command.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -98,8 +88,8 @@
       <file leaf-file-name="SearchCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/classes/commands/SearchCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1411">
-              <caret line="102" column="45" lean-forward="true" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
+            <state relative-caret-position="1343">
+              <caret line="102" column="45" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#initArgs#0;class#SearchCommand#0" />
@@ -112,7 +102,7 @@
       <file leaf-file-name="MessageListener.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/classes/MessageListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="17">
               <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -138,14 +128,10 @@
       <file leaf-file-name="InitializeCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/classes/commands/InitializeCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="17" column="60" lean-forward="true" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+            <state relative-caret-position="204">
+              <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#851#852#0" expanded="true" />
-                <element signature="e#901#902#0" expanded="true" />
-                <element signature="e#1132#1133#0" expanded="true" />
-                <element signature="e#1209#1210#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,12 +140,10 @@
       <file leaf-file-name="HelpCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/classes/commands/HelpCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="153">
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#547#548#0" expanded="true" />
-                <element signature="e#609#610#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -169,7 +153,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/classes/App.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="66" lean-forward="true" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
+              <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -591,8 +575,58 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="StarlightBot" type="58d84e3e:PackageViewProjectNode" />
+              <item name="StarlightBot" type="eaaa3913:PackageViewModuleGroupNode" />
+            </path>
+            <path>
+              <item name="StarlightBot" type="58d84e3e:PackageViewProjectNode" />
+              <item name="StarlightBot" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="StarlightBot_main" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="StarlightBot" type="58d84e3e:PackageViewProjectNode" />
+              <item name="StarlightBot" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="StarlightBot_main" type="616d4139:PackageViewModuleNode" />
+              <item name="com.discordbots.starlightbot" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="StarlightBot" type="58d84e3e:PackageViewProjectNode" />
+              <item name="StarlightBot" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="StarlightBot_main" type="616d4139:PackageViewModuleNode" />
+              <item name="com.discordbots.starlightbot" type="1f31426a:PackageElementNode" />
+              <item name="classes" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="StarlightBot" type="58d84e3e:PackageViewProjectNode" />
+              <item name="StarlightBot" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="StarlightBot_main" type="616d4139:PackageViewModuleNode" />
+              <item name="com.discordbots.starlightbot" type="1f31426a:PackageElementNode" />
+              <item name="classes" type="1f31426a:PackageElementNode" />
+              <item name="commands" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="StarlightBot" type="58d84e3e:PackageViewProjectNode" />
+              <item name="StarlightBot" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="StarlightBot_main" type="616d4139:PackageViewModuleNode" />
+              <item name="com.discordbots.starlightbot" type="1f31426a:PackageElementNode" />
+              <item name="classes" type="1f31426a:PackageElementNode" />
+              <item name="utils" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="StarlightBot" type="58d84e3e:PackageViewProjectNode" />
+              <item name="StarlightBot" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="StarlightBot_test" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -664,56 +698,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="starlightbot" type="462c0819:PsiDirectoryNode" />
               <item name="interfaces" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="StarlightBot" type="58d84e3e:PackageViewProjectNode" />
-              <item name="StarlightBot" type="eaaa3913:PackageViewModuleGroupNode" />
-            </path>
-            <path>
-              <item name="StarlightBot" type="58d84e3e:PackageViewProjectNode" />
-              <item name="StarlightBot" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="StarlightBot_main" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="StarlightBot" type="58d84e3e:PackageViewProjectNode" />
-              <item name="StarlightBot" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="StarlightBot_main" type="616d4139:PackageViewModuleNode" />
-              <item name="com.discordbots.starlightbot" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="StarlightBot" type="58d84e3e:PackageViewProjectNode" />
-              <item name="StarlightBot" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="StarlightBot_main" type="616d4139:PackageViewModuleNode" />
-              <item name="com.discordbots.starlightbot" type="1f31426a:PackageElementNode" />
-              <item name="classes" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="StarlightBot" type="58d84e3e:PackageViewProjectNode" />
-              <item name="StarlightBot" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="StarlightBot_main" type="616d4139:PackageViewModuleNode" />
-              <item name="com.discordbots.starlightbot" type="1f31426a:PackageElementNode" />
-              <item name="classes" type="1f31426a:PackageElementNode" />
-              <item name="commands" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="StarlightBot" type="58d84e3e:PackageViewProjectNode" />
-              <item name="StarlightBot" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="StarlightBot_main" type="616d4139:PackageViewModuleNode" />
-              <item name="com.discordbots.starlightbot" type="1f31426a:PackageElementNode" />
-              <item name="classes" type="1f31426a:PackageElementNode" />
-              <item name="utils" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="StarlightBot" type="58d84e3e:PackageViewProjectNode" />
-              <item name="StarlightBot" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="StarlightBot_test" type="616d4139:PackageViewModuleNode" />
             </path>
           </expand>
           <select />
@@ -852,10 +836,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32943678" />
       <window_info anchor="right" id="Palette&#9;" order="10" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -874,6 +858,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995749" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32943678" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info id="Nl-Palette" order="6" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -1247,8 +1232,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/classes/commands/SearchCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="102" column="45" lean-forward="true" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
+        <state relative-caret-position="1343">
+          <caret line="102" column="45" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#initArgs#0;class#SearchCommand#0" />
@@ -1273,26 +1258,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/classes/commands/HelpCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        <state relative-caret-position="153">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/classes/commands/InitializeCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="60" lean-forward="true" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+        <state relative-caret-position="204">
+          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
-            <element signature="e#1209#1210#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1300,13 +1279,13 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/classes/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="66" lean-forward="true" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
+          <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/discordbots/starlightbot/classes/MessageListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
+        <state relative-caret-position="17">
           <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
