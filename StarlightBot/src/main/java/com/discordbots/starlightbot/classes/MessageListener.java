@@ -30,7 +30,7 @@ public class MessageListener extends ListenerAdapter {
 
     static final int TEST_VERSION = 1;
     static final int PROD_VERSION = 0;
-    static final int currentVer = PROD_VERSION;
+    static final int currentVer = TEST_VERSION;
     public static boolean initialized = false;
     public static MessageChannel logChannel;
 
